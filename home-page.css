@@ -333,3 +333,30 @@
   font-weight: 700;
 }
 
+@media only screen and (max-width: 600px) {
+  body{
+    margin: 0px;
+    padding: 0px;
+  }
+.sec-1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.sec-1>div{
+ margin: 15px
+}
+.header1{
+  width: fit-content;
+}
+.header2{
+  display: none;
+}
+.header3{
+  display: none;
+}  
+.dropdown{
+  display: block;
+}
+
+}
