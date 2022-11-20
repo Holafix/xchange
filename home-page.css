@@ -384,10 +384,11 @@ position: relative;
   font-weight: 700;
 }
 
-@media only screen and (max-width: 600px) {
+@media  screen and (max-width: 600px) {
   body{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
   }
 .sec-1{
   display: flex;
@@ -411,14 +412,13 @@ position: relative;
 }
 .sec-2{
   margin: 0px;
-  height: 450px;
 }
 .banner-word ,.sec-2>i{
 font-size: 35px;
 font-weight: 450;
 }
 .banner-word{
-  margin: 120px 135px 0px 135px;
+  margin: 120px 0px 0px 135px;
   width: 60%;
   display: inline-block;
 }
@@ -453,13 +453,13 @@ font-weight: 450;
   margin: 50px 0px 0px 130px;
 }
 .sec-3-welcome{
-  height: 380px;
+ height: fit-content;
 }
 .choose-us>i{
   padding: 8px 15px 0px 0px;
 }
 .choose-us{
-  margin: 40px 0px 0px -230px;
+  margin: 40px 0px 0px -180px;
 }
 .topic{
   margin: 0px 0px 0px 0px;
@@ -480,23 +480,42 @@ font-weight: 450;
   flex-direction: column;
   justify-content: center;
   justify-content: space-between;
+  padding-bottom: 20px;
 }
 .sec-4-first-blue>i{
   margin-top: 20px;
+}
+.current-images{
+display: flex;
+flex-wrap: wrap;
+
+}
+.rate-images{
+ 
+  margin-left: 50px;
+width: 85%;
+height: 100%;
 }
 .chat{
   margin-bottom: 20px;
 }
 
 .sec-6-second-blue{
-  height: 280px;
+  height: 300px;
   display: flex;
   flex-direction: column;
+}
+.sec-6-second-blue>div{
+  margin-left: 0px;
 }
 
 .only{
   margin-top: 5px;
   margin-bottom: 10px;
+}
+.social-icons{
+  margin-left: 0px;
+  padding-left: 0px;
 }
 .whatsapp-number{
   margin-top: 0px;
@@ -510,18 +529,17 @@ font-weight: 450;
 .sec-7-last-blue{
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
+  padding-left: 0px;
+  padding: 20px;
+  margin-bottom: 20px;
 }
 
 .copyright{
-  font-size: 15px;
-  margin-left: 0px;
-  align-self: center;
-  margin-bottom: 20px;
-}
-.author{
-  align-items: center;
-  margin-left: 150px;
-  margin-top: 0px;
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 100;
+  padding-bottom: 20px;
 }
 }
