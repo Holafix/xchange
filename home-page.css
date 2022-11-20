@@ -2,11 +2,25 @@
   margin: 0px;
   padding: 0px;
 }
+.section{
+position: relative;
+}
+.fixed-whatsapp{
+ position: absolute;
+ bottom: 30px;
+ right: 30px;
+ position: fixed;
+ color: rgb(76, 219, 48);
+ font-size: 50.8px;
+ font-style: normal;
+ font-weight: 400;
+ 
+}
 .sec-1 {
-  max-height: auto;
-  max-width: auto;
+  max-height: fit-content;
   background-color: rgb(255, 255, 255);
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 16px 0px;
+  border-style: none; 
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 16px 0px; 
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -30,8 +44,7 @@
   box-sizing: border-box;
   color: rgb(33, 37, 41);
   cursor: pointer;
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
-    Arial, "Noto Sans" sans-serif;
+  font-family: 'Gugi', Arial, Helvetica, sans-serif;
   font-size: 24px;
   line-height: 28.8px;
   margin-bottom: 8px;
@@ -41,8 +54,7 @@
   box-sizing: border-box;
   color: rgb(66, 50, 194);
   cursor: pointer;
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
-    Arial, "Noto Sans" sans-serif;
+  font-family: 'Oswald', sans-serif, Arial, Helvetica, sans-serif;
   font-size: 24px;
   font-weight: 500;
   line-height: 28.8px;
@@ -52,6 +64,7 @@
   text-size-adjust: 100px;
   white-space: nowrap;
 }
+
 .header2 > p {
   display: inline-block;
   font-size: 17px;
@@ -67,12 +80,42 @@
   font-weight: 400;
   margin-inline: 10px;
 }
+.dropdown{
+  display: none;
+}
+.dropdown>i{
+  font-size: 30px;
+  cursor: pointer;
+  color: rgb(39, 37, 37);
+  }
+  .dropdown-content{
+  display: none;
+  background-color: aliceblue;
+  min-width: 160px;
+  }
+  .dropdown-content > a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+  }
+  .dropdown:hover .dropdown-content {
+      display: block;
+  }
+  
 .sec-2 {
   background-image: url(banner-bg-01.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 100%;
   height: 570px;
+  margin-top: 0px;
+}
+.three-icons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0px 60px 0px 60px;
 }
 .fa-less-than {
   display: inline-block;
@@ -81,7 +124,7 @@
   font-size: 64px;
   font-style: normal;
   font-weight: 400;
-  margin: 0px 0px 0px 80px;
+  margin: 0px 0px 0px 0px;
 }
 .banner-word {
   display: inline-block;
@@ -89,8 +132,8 @@
   font-family: "Open Sans", sans-serif;
   font-size: 64px;
   font-weight: 100;
-  max-width: 700px;
-  margin: 150px 200px 0px 120px;
+  max-width: 60%;
+  margin: 160px 0px 0px 200px;
 }
 .fa-greater-than {
   display: inline-block;
@@ -99,7 +142,7 @@
   font-size: 64px;
   font-style: normal;
   font-weight: 400;
-  margin: 0px 80px 0px 0px;
+  margin: 0px 0px 0px 0px;
 }
 .blue-dash1 {
   background-color: rgb(98, 102, 234);
@@ -109,7 +152,7 @@
   
 }
 .chat-us {
-  display: inline-block;
+  width: 150px;
   color: rgb(66, 50, 194);
   cursor: pointer;
   font-size: 24px;
@@ -121,7 +164,7 @@
   border-color: rgb(66, 50, 194);
   border-width: 1px;
   border-color: rgb(66, 50, 194);
-  margin: 50px 0px 0px 235px;
+  margin: 30px 0px 0px 200px;
 }
 .welcome-text {
   text-align: center;
@@ -132,24 +175,32 @@
   color: rgb(33, 37, 41);
   margin-top: 60px;
 }
-.welcome-topic > i {
+.choose-us > i {
   display: inline-block;
-  font-size: 24px; 
-  margin: 0px 0px 0px 0px;
+  font-size: 24px;
+  padding-top: 68px;
+  margin-right: 10px;
+  
+}
+.choose-us{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: -500px;
+  
 }
 .topic {
-  display: inline-block;
   color: rgb(33, 37, 41);
   font-family: "Open Sans", sans-serif;
   font-size: 28px;
   font-weight: 500;
-  margin: 60px 0px 0px 310px;
+  margin: 60px 0px 0px 20px;
 }
 .blue-dash {
   background-color: rgb(89, 75, 196);
   width: 150px;
   display: block;
-  margin-left: 336.25px;
+  margin-left: 340.25px;
   margin-top: 15px;
   height: 4px;
 }
@@ -265,7 +316,7 @@
   margin-inline: 10px;
 }
 .whatsapp {
-  display: inline;
+  
   color: rgb(246, 249, 254);
   cursor: pointer;
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
@@ -332,7 +383,6 @@
   font-size: 16px;
   font-weight: 700;
 }
-
 
 @media only screen and (max-width: 600px) {
   body{
